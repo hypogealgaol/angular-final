@@ -1,0 +1,20 @@
+
+<h1>Angular Repositories</h1>
+<h2>
+  
+  <a href="#/about">About</a>
+  
+</h2>
+<ul>
+  <div ng-repeat="assns in Assn" ng-class="assignments">
+    <!-- make variable only in HTML -->
+    <h3 ng-click="show = !show" cursor:crosshair>{{assns.assignment}}</h3>
+    <div ng-show="show">
+      <!-- cool hack! -->
+      <p>URL: {{assns.url}}</p>
+      <p>STATUS: {{assns.status}}</p>
+      <p>COMMENTS: {{assns.comments}}</p>
+    </div>
+  </div>
+</ul>
+
